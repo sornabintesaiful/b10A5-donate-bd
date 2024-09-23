@@ -27,7 +27,7 @@
         </div>
         <div id="main-balance-amount" class="flex justify-evenly">
           <img src="assets/coin.png" alt="">
-          <h2 class=" text-[#111111] px-1 opacity-70  ml-2 font-bold text-xl justify-center ">5500 BDT</h2>
+          <h2  class=" text-[#111111] px-1 opacity-70  ml-2 font-bold text-xl justify-center "><span id="your-balance">5500</span> BDT</h2>
         </div>
       
 
@@ -44,7 +44,7 @@
       <div class="w-1/2">
         <div id="noyakhali-balance-amount" class="flex">
           <img src="assets/coin.png" alt="">
-          <h2 class=" text-[#111111] px-1 opacity-70  ml-2 font-bold text-xl ">0 BDT</h2>
+          <h2 class=" text-[#111111] px-1 opacity-70  ml-2 font-bold text-xl "> <span id="nkhli-donation-balance">00</span> BDT</h2>
         </div>
         <h2 class=" text-[#111111] my-3 font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
         <p class="font-normal text-sm  opacity-70 text-[#111111]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support
@@ -54,7 +54,7 @@
         donation to support these brave individuals in their time of need.</p>
         <input id="input-noyakhali-donate" type="text" placeholder="Write Donation Amount" class="border rounded-lg border-opacity-35 border-slate-400 w-full my-4 p-4">
         <br>
-        <button
+        <button id="btn-donate-nkhl"
           class="btn w-full px-8 border rounded-lg bg-[#B4F461] text-[#111111] font-bold text-xl align-middle justify-center ">Donate Now</button>
       </div>
     </div>
@@ -65,7 +65,7 @@
         <div class="w-1/2">
           <div id="noyakhali-balance-amount" class="flex">
             <img src="assets/coin.png" alt="">
-            <h2 class=" text-[#111111] px-1 opacity-70  ml-2 font-bold text-xl ">600 BDT</h2>
+            <h2  class=" text-[#111111] px-1 opacity-70  ml-2 font-bold text-xl "> <span id="amount-for-feni">600</span> BDT</h2>
           </div>
           <h2 class=" text-[#111111] my-3 font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
           <p class="font-normal text-sm  opacity-70 text-[#111111]">The recent Quota movement has resulted in numerous
@@ -76,10 +76,10 @@
             Every
             donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a
             donation to support these brave individuals in their time of need.</p>
-          <input id="input-noyakhali-donate" type="text" placeholder="Write Donation Amount"
+          <input id="input-feni-donate" type="text" placeholder="Write Donation Amount"
             class="border rounded-lg border-opacity-35 border-slate-400 w-full my-4 p-4">
           <br>
-          <button
+          <button id="btn-feny-dnt"
             class="btn w-full px-8 border rounded-lg bg-[#B4F461] text-[#111111] font-bold text-xl align-middle justify-center ">Donate
             Now</button>
         </div>
@@ -89,9 +89,9 @@
         <div class="my-8 border flex gap-8 p-8 border-opacity-35 rounded-lg border-slate-400 w-10/12 mx-auto ">
           <div class="w-1/2"><img class="w-full" src="assets/quota-protest.png" alt=""></div>
           <div class="w-1/2">
-            <div id="noyakhali-balance-amount" class="flex">
+            <div class="flex">
               <img src="assets/coin.png" alt="">
-              <h2 class=" text-[#111111] px-1 opacity-70  ml-2 font-bold text-xl ">2400 BDT</h2>
+              <h2 class=" text-[#111111] px-1 opacity-70  ml-2 font-bold text-xl "><span id="kota-amount-balance">2400</span> BDT</h2>
             </div>
             <h2 class=" text-[#111111] my-3 font-bold text-xl">Aid for Injured in the Quota Movement</h2>
             <p class="font-normal text-sm  opacity-70 text-[#111111]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support
@@ -99,15 +99,19 @@
             you help ensure that injured individuals receive the care and support they need during this challenging time. Every
             donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a
             donation to support these brave individuals in their time of need.</p>
-            <input id="input-noyakhali-donate" type="text" placeholder="Write Donation Amount"
+            <input id="input-kota-donate" type="text" placeholder="Write Donation Amount"
               class="border rounded-lg border-opacity-35 border-slate-400 w-full my-4 p-4">
             <br>
-            <button
+            <button id="btn-kota-dnt"
               class="btn w-full px-8 border rounded-lg bg-[#B4F461] text-[#111111] font-bold text-xl align-middle justify-center ">Donate
               Now</button>
           </div>
         </div>
        <!-- kota ends -->
   </main>
+  <script src="JS/utilitis.js"></script>
+  <script src="JS/NKHL.js"></script>
+  <script src="JS/feni-dontn.js"></script>
+  <script src="JS/kota.js"></script>
 </body>
 </html>
