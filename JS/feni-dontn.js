@@ -23,7 +23,7 @@ document.getElementById('btn-feny-dnt')
     console.log(updateDonateBalance, nowYourBalance);
   } else {
     alert('invalid input');
-    }
+    };
     
     const historyItem = document.createElement('div');
     historyItem.className = 'bg-[#F9F7F3]  my-4 rounded-lg bg-opacity-35 p-8';
