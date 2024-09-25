@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- font Lexend link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- daisyui link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-lexend">
+  <div class="sticky top-0 z-10 w-full ">
+    <div id="logo-icon-line" class="bg-[#F9F7F3] navbar flex justify-around py-8 w-full">
+  
+      <div id="blog-btn" class="">
+        <button
+          class="btn lg:px-8 border rounded-lg bg-[#B4F461] text-[#111111] font-bold text-xl align-middle justify-center "><a class="" href="home.html">home</a></button>
+      </div>
+      <div class="flex ">
+        <img src="assets/logo.png" alt="">
+        <h1 class=" text-[#111111] px-1 mt-2 ml-2 font-bold text-xl justify-center ">Donate Bangladesh</h1>
+      </div>
+      <div id="main-balance-amount" class="flex ">
+        <img src="assets/coin.png" alt="">
+        <h2 class=" text-[#111111] px-1 opacity-70  ml-2 font-bold text-xl justify-center "><span
+            id="your-balance">5500</span> BDT</h2>
+      </div>
+    </div>
+  </div>
+  <div class="mx-auto my-5 w-10/12 space-y-3">
+    <h2 class="text-5xl font-extrabold">Important FAQ 
+      <span><img class="inline-block skew-y-3" src="assets/icon.png" alt=""></span></h2>
+        <!-- Q-1 -->  
+        <div id="comment-container-1" class="py-4 space-y-3 border border-opacity-35 border-slate-400 rounded-lg px-3">
+          <h3 class="text-[#111111] text-xl font-bold">What is the Document Object Model (DOM)?</h3>
+          <p id="q1-p" class="font-medium">The Document Object Model (DOM) is a programming interface for web documents, primarily HTML and XML. It represents the
+          structure of a document as a tree of objects, where each node in the tree corresponds to a part of the document, such as
+          elements, attributes, and text content.</p>
+          <input id="q1-input" class="w-11/12 " type="text" placeholder="write your answer here"> <button id="btn-send" class="btn ml-1 px-3 py-1 w-.5/12 bg-[#B4F461] text-[#111111]" >Send</button>
+        </div>
+        <!-- Q-2 -->
+        <div class="py-4 border border-opacity-35 border-slate-400 rounded-lg px-3">
+          <h3 class="text-[#111111] font-bold text-xl">How do you select an element from the DOM</h3>
+          <p class="font-medium"></p>
+          <input type="text" placeholder="write your answer here">
+        </div>
+        <!-- Q-3 -->
+        <div class="py-4 border border-opacity-35 border-slate-400 rounded-lg px-3">
+          <h3 class="text-[#111111] font-bold text-xl">What is event delegation in the context of the DOM, and why is it useful?</h3>
+          <p class="font-medium"></p>
+          <input type="text" placeholder="write your answer here">
+        </div>
+        <!-- Q-4 -->
+        <div class="py-4 border border-opacity-35 border-slate-400 rounded-lg px-3">
+          <h3 class="text-[#111111] font-bold text-xl">How do you manlpulate an element's attributes and style using the DOM</h3>
+          <p class="font-medium"></p>
+          <input type="text" placeholder="write your answer here">
+        </div>
+         
+  </div>
+  <script>
+    document.getElementById('btn-send').addEventListener('click', function () {
+
+        const commentBox = document.getElementById('q1-input');
+        const newComment = commentBox.value;
+        const commentContainer = document.getElementById('comment-container-1');
+        const p = document.createElement('p');
+        p.innerText = newComment;
+        commentContainer.appendChild(p);
+        commentBox.value = '';
+
+     })   
+  </script>
+
+  <script src="JS/utilitis.js"></script>
+  <script src="JS/NKHL.js"></script>
+  <script src="JS/feni-dontn.js"></script>
+  <script src="JS/kota.js"></script>
+  <script src="JS/histori.js"></script>
+
+</body>
+
+</html>

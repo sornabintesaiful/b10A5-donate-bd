@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- font Lexend link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  <!-- daisyui link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
   <div class="sticky top-0 z-10 w-full ">
     <div id="logo-icon-line" class="bg-[#F9F7F3] navbar flex justify-around py-8 w-full">
   
       <div id="blog-btn" class="">
         <button
-          class="btn lg:px-8 border rounded-lg bg-[#B4F461] text-[#111111] font-bold text-xl align-middle justify-center "><a class="" href="home.html">home</a></button>
+          class="btn lg:px-8 border rounded-lg bg-[#B4F461] text-[#111111] font-bold text-xl align-middle justify-center "><a
+            class="" href="home.html">home</a></button>
       </div>
       <div class="flex ">
         <img src="assets/logo.png" alt="">
@@ -33,14 +27,64 @@
       </div>
     </div>
   </div>
-
-
-
-  <script src="JS/utilitis.js"></script>
-  <script src="JS/NKHL.js"></script>
-  <script src="JS/feni-dontn.js"></script>
-  <script src="JS/kota.js"></script>
-  <script src="JS/histori.js"></script>
+ <main>
+  <div class="w-11/12 lg:w-10/12 mx-auto my-5 space-y-3">
+    <h2 class="text-5xl font-extrabold">Important FAQ
+      <span><img class="inline-block skew-y-3" src="assets/icon.png" alt=""></span>
+    </h2>
+    <!-- q1 -->
+    <div class="collapse collapse-arrow bg-base-200 py-4 space-y-3 border border-opacity-35 border-slate-400 rounded-lg px-3">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium"><h3 class="text-[#111111] text-xl font-bold">What is the Document Object Model (DOM)?</h3>
+      </div>
+      <div class="collapse-content">
+        <p id="q1-p" class="font-medium">The Document Object Model (DOM) is a programming interface for web documents, primarily
+          HTML and XML. It represents the
+          structure of a document as a tree of objects, where each node in the tree corresponds to a part of the document, such
+          as
+          elements, attributes, and text content.</p>
+      </div>
+    </div>
+    <!-- q2 -->
+    <div class="collapse collapse-arrow bg-base-200 py-4 space-y-3 border border-opacity-35 border-slate-400 rounded-lg px-3">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium"><h3 class="text-[#111111] text-xl font-bold">How do you select an element from the DOM?</h3>
+      </div>
+      <div class="collapse-content">
+        <p id="q1-p" class="font-medium">By giving an id on that element I will type the code <br>
+        document.getElementById('id-name').</p>
+      </div>
+    </div>
+    <!-- q3 -->
+    <div class="collapse collapse-arrow bg-base-200 py-4 space-y-3 border border-opacity-35 border-slate-400 rounded-lg px-3">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium"><h3 class="text-[#111111] text-xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</h3>
+      </div>
+      <div class="collapse-content">
+        <p id="q1-p" class="font-medium">Event delegation is an event-handling pattern that allows developers to manage events at a higher level in the DOM tree
+        instead of attaching event listeners to individual elements. <br>This approach is useful because it improves performance by
+        reducing the number of event listeners needed; you only need to set up one event listener on a parent element rather
+        than multiple listeners on child elements. This method simplifies memory management and allows for dynamic handling of
+        new elements added to the DOM.</p>
+      </div>
+    </div>
+    <!-- q4 -->
+    <div class="collapse collapse-arrow bg-base-200 py-4 space-y-3 border border-opacity-35 border-slate-400 rounded-lg px-3">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium"><h3 class="text-[#111111] text-xl font-bold">How do you manipulate an element's attributes and style using the DOM?</h3>
+      </div>
+      <div class="collapse-content">
+        <p id="q1-p" class="font-medium">I can manipulate an element's attributes and style in the DOM using JavaScript. Access the element using methods like
+        getElementById, getElementsByClassName, or querySelector. 
+        <br>To modify styles,I will use the style property of the Element
+        object, which allows me to set CSS properties directly (e.g., element.style.color = "red";). 
+        <br>For attributes, I will use
+        methods like setAttribute to change the element’s attributes (e.g., element.setAttribute('src', 'image.jpg');). 
+       </p>
+      </div>
+    </div>
+    
+  </div>
+ </main>
 </body>
-
 </html>
