@@ -33,6 +33,7 @@ document.getElementById('btn-feny-dnt')
     `;
     const historyContainer = document.getElementById('history-detailes');
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+     document.getElementById('my_modal_1').showModal();
 
-    alert('You Have Donated for Humankind');
+    // alert('You Have Donated for Humankind');
 });

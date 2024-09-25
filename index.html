@@ -102,21 +102,35 @@
               class="border rounded-lg border-opacity-35 border-slate-400 w-full my-4 p-4">
             <br>
             <button id="btn-kota-dnt"
-              class="btn w-full px-8 border rounded-lg bg-[#B4F461] text-[#111111] font-bold text-xl align-middle justify-center ">Donate
+              class="btn w-full px-8 border rounded-lg bg-[#B4F461] text-[#111111] font-bold text-xl align-middle justify-center "  >Donate
               Now</button>
+             
           </div>
         </div>
        <!-- kota ends -->
         <!-- modals -->
-         <div id="modals-container" class="py-4 hidden px-auto w-1/2 mx-auto space-y-5  border-opacity-35 rounded-lg border-slate-400 border grid col-span-1 align-middle justify-center content-center  ">
+         <!-- <div id="modals-container" class="py-4 hidden px-auto w-1/2 mx-auto space-y-5  border-opacity-35 rounded-lg border-slate-400 border grid col-span-1 align-middle justify-center content-center  ">
           
+           
+            <button class="btn  "> close confirmation</button>
+          
+         </div> --> 
+        <!-- Open the modal using ID.showModal() method -->
+         <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box">
             <h2 class="text-5xl  font-bold text-[#111111]">Congrates</h2>
             <img class="" src="assets/coin.png" alt="">
             <p class="text-[#111111]  font-medium text-xl">You Have Donated for Humankind</p>
             <h2 class="text-3xl  font-bold text-[#111111]">Successfully</h2>
-            <button class="btn  "> close confirmation</button>
-          
-         </div>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog> 
   </main>
   <section id="history-detailes" class="hidden mx-auto lg:w-9/12 w-11/12">
   </section>
