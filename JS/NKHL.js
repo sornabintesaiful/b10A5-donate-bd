@@ -31,4 +31,7 @@ document.getElementById('btn-donate-nkhl').addEventListener('click', function ()
     `;
   const historyContainer = document.getElementById('history-detailes');
   historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+
+ 
+  alert('You Have Donated for Humankind');
 });

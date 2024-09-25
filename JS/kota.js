@@ -36,4 +36,7 @@ document.getElementById('btn-kota-dnt').addEventListener('click', function () {
     `;
   const historyContainer = document.getElementById('history-detailes');
   historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+
+  
+  alert('You Have Donated for Humankind');
 });

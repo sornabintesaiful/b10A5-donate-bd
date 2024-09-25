@@ -11,6 +11,7 @@
    <!-- daisyui link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-lexend">
   <div class="sticky top-0 z-10 w-full ">
@@ -84,7 +85,7 @@
       </div>
       <!-- feni ends -->
        <!-- kota starts -->
-        <div class="my-8 border lg:flex gap-8 p-8 border-opacity-35 rounded-lg border-slate-400 lg:w-9/12 w-11/12 mx-auto ">
+        <div  class="my-8 border lg:flex gap-8 p-8 border-opacity-35 rounded-lg border-slate-400 lg:w-9/12 w-11/12 mx-auto ">
           <div class="lg:w-1/2"><img class="w-full" src="assets/quota-protest.png" alt=""></div>
           <div class="lg:w-1/2 mt-5 lg:mt-0">
             <div class="flex bg-slate-100 lg:w-2/5 w-2/4 rounded-lg py-2.5 px-4">
@@ -106,6 +107,16 @@
           </div>
         </div>
        <!-- kota ends -->
+        <!-- modals -->
+         <div id="modals-container" class="py-4 hidden px-auto w-1/2 mx-auto space-y-5  border-opacity-35 rounded-lg border-slate-400 border grid col-span-1 align-middle justify-center content-center  ">
+          
+            <h2 class="text-5xl  font-bold text-[#111111]">Congrates</h2>
+            <img class="" src="assets/coin.png" alt="">
+            <p class="text-[#111111]  font-medium text-xl">You Have Donated for Humankind</p>
+            <h2 class="text-3xl  font-bold text-[#111111]">Successfully</h2>
+            <button class="btn  "> close confirmation</button>
+          
+         </div>
   </main>
   <section id="history-detailes" class="hidden mx-auto lg:w-9/12 w-11/12">
   </section>
